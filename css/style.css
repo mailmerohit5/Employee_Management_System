@@ -1,0 +1,143 @@
+:root{
+    --white-color:  #faf4f4;
+    --grey-color: #6d6a6a;
+    --red-color: rgb(199, 40, 40);
+    --green-color:rgb(81, 206, 81);
+    --shadow-color: #2b2a2a;
+    --border-color:#2b2a2a;
+    --dark-red-color:rgb(148, 14, 14);
+    --violet-color:rgb(153, 31, 153);
+  }
+   *{
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+  }
+  body{
+      font-family: 'Noto Sans TC', sans-serif;
+  }
+  img{
+      max-width: 100%;
+  }
+  a{
+      text-decoration: none;
+      color: var(--violet-color);
+  }
+  header{
+      position: fixed;
+      top:0px;
+      background-color:var( --grey-color);
+      width: 100%;
+      color: var(--white-color);
+      padding:10px; 
+      margin-bottom: 10px;           
+  }
+  section{
+     /* background-color:#6d6a6a;
+      color:  #faf4f4;*/
+      background-color:#ffffff;
+      margin-top: 60px;
+      padding: 10px;
+  }
+  footer{
+      position: fixed;
+      bottom: 0px;
+      background-color:var( --grey-color);
+      color:var( --white-color);
+      padding:10px; 
+      margin-top: 10px;  
+      width: 100%;
+      text-align: center;
+  }
+  footer a{
+      color:  #faf4f4;
+  }
+  .container{
+      
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+  .login_form {
+      background-color: var(--white-color);
+      padding: 5px;
+      max-width: 370px;
+      border:0.5px solid var(--border-color);
+      border-radius: 25px;
+      box-shadow: 0.5px 1.7px var(--shadow-color);
+  }
+  .login_form form{
+      display: grid;
+      padding: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .login_form form a{
+      margin-top: 2rem;
+  }
+  .login_form form .form-control{
+      border: 1px solid var(--border-color);
+      border-radius: 15px;
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 1.2rem;
+      font-family: 'Noto Sans TC', sans-serif;
+  }
+  .login_form form .form-control:active,
+  .login_form form .form-control:focus
+  {
+      border:2px solid var(--green-color);
+      outline: none;
+  }
+  .btn{
+      background-color: var(--red-color);
+      width: 80%;
+      margin:0 auto;
+      border-radius: 15px;
+      outline: none;
+      padding: 5px;
+      font-size: 1.3rem;
+      border: none;
+      color: white;
+      font-family: 'Noto Sans TC', sans-serif;
+      cursor: pointer;
+  }
+  .btn:hover{
+      background-color: var(--dark-red-color);
+  }
+  header h1{
+      font-size: 1.2rem;
+  }
+
+  .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:2rem;
+  }
+  .makeMeCenter{
+      justify-self: center;
+      align-self: center;
+      
+  }
+  .onlyMobile{
+    display: none;
+}
+.form-control-error{
+    color: var(--dark-red-color);
+    font-size: 0.65rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+@media only screen and (min-width: 600px) {
+    header h1{
+        font-size: 2rem;
+    }  
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .onlyMobile{
+        display: block;
+    }
+}
